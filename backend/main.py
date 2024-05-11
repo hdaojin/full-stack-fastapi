@@ -3,7 +3,8 @@ from fastapi.routing import APIRoute
 from fastapi.middleware.cors import CORSMiddleware
 
 
-from core.config import settings
+from app.api.main import api_router
+from app.core.config import settings
 
 def custom_generate_unique_id(route: APIRoute) -> str:
     return f"{route.tags[0]}-{route.name}"
@@ -28,8 +29,10 @@ if settings.BACKEND_CORS_ORIGINS:
         allow_headers=["*"],
     )
 
-# # Include the routers
-# app.include_router(api_router, prefix=settings.API_V1_STR)
+# Include the routers
+app.include_router(api_router, prefix=settings.API_V1_STR)
 
 # run the app
 # uvicorn main:app --reload
+
+

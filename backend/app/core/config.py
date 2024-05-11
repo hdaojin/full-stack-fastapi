@@ -14,7 +14,7 @@ from pydantic import (
 from pydantic_core import MultiHostUrl
 from typing_extensions import Self   # Self是一个类型变量，用于表示当前类的类型。在这个案例中，Self用于表示Settings类的类型。
 
-import core.path_config as path_config
+import app.core.path_config as path_config
 
 # 这个函数用于解析CORS(跨域资源共享)配置，它检查输入值，如果是字符串且不以[开头，则将其按逗号分隔，并返回列表。如果是列表或字符串，则直接返回。如果不符合这些条件，则抛出错误。
 def prase_cors(value: Any) -> list[AnyUrl] | str:  
