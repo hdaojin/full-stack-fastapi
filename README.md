@@ -1,6 +1,6 @@
 # full-stack-fastapi
 
-Full stack, modern web application. Using FastAPI, SQLModel, MariaDB,  Jinja2 template, HTML, Javascript, Bootstrap, Docker(?), GitHub Actions(?), and more.
+Full stack, modern web application. Using FastAPI, SQLModel, MariaDB, Jinja2 template, HTML, Javascript, daisyui, Docker(?), GitHub Actions(?), and more.
 
 ## Features
 
