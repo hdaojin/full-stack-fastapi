@@ -1,7 +1,18 @@
-
 {% extends "base.html" %}
 
 {% block content %}
-<div id="markdown-container" class="markdown-body container mx-auto px-4 mt-4">Loading page content... </div>
+<div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-4">
+        <!-- <div class="lg:col-span-1">TOC</div> -->
+        <div class="lg:col-span-9">
+            <article id="markdown-container" class="prose dark:prose-invert max-w-none">
+                Loading page content...
+            </article>
+        </div>
+        <div class="lg:col-span-3">
+            <div id="toc" class="prose dark:prose-invert"></div>
+        </div>
+    </div>
+</div>
 <script src="{{ url_for('static', path='/scripts/page.js') }}"></script>
 {% endblock %}

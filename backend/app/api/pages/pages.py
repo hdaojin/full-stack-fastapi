@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 
 from app.core.path_config import UPLOADS_DIR
-from app.common.md2html import markdown_to_html
+from app.common.md2html import markdown_to_html, extract_soup_from_html
 
 
 router = APIRouter()
@@ -18,7 +18,9 @@ async def get_pages(page_name):
     page_path = PAGES_DIR.joinpath(f"{page_name}.md")
     if page_path.exists() and page_path.is_file():
         with open(page_path, 'r', encoding='utf-8') as f:
-            return markdown_to_html(f.read())
+            html = markdown_to_html(f.read())
+            soups = extract_soup_from_html(html["html"])
+            return {"meta": html["meta"], "title": soups["title"], "toc": soups["toc"], "html": html["html"]}
     else:
         return {"error": "Page not found"}
 

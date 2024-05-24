@@ -1,51 +1,258 @@
-# 关于ITNSA
+---
+__Advertisement :)__
 
-ITNSA(全称: IT Network Systems Administration, 中文名: IT网络系统管理) 是世界技能大赛中的一项技能项目，属于信息技术类别。ITNSA项目的目标是培养学生在网络系统管理方面的技能，包括网络系统的设计、搭建、维护、优化等方面的技能。ITNSA项目的内容涵盖了网络系统的硬件、软件、网络安全、网络管理等方面的知识，是一个综合性的技能项目。
+- __[pica](https://nodeca.github.io/pica/demo/)__ - high quality and fast image
+  resize in browser.
+- __[babelfish](https://github.com/nodeca/babelfish/)__ - developer friendly
+  i18n with plurals support and easy syntax.
 
-## 项目内容
+You will like those projects!
 
-ITNSA项目的内容主要包括以下几个方面：
+---
 
-- 网络系统的设计与规划
-- 网络系统的搭建与配置
-- 网络系统的维护与优化
-- 网络系统的安全与管理
-- 网络系统的监控与故障处理
-  - Network System Design and Planning
-  - Network System Building and Configuration
-  
-For example, the following code block will be rendered as a code block:
+# h1 Heading 8-)
+## h2 Heading
+### 中文标题
+#### h4 Heading
+##### 中文标题
+###### h6 Heading
 
-```python
-print("Hello, World!")
+
+## Horizontal Rules
+
+___
+
+---
+
+***
+
+
+## Typographic replacements
+
+Enable typographer option to see result.
+
+(c) (C) (r) (R) (tm) (TM) (p) (P) +-
+
+test.. test... test..... test?..... test!....
+
+!!!!!! ???? ,,  -- ---
+
+"Smartypants, double quotes" and 'single quotes'
+
+
+## Emphasis
+
+**This is bold text**
+
+__This is bold text__
+
+*This is italic text*
+
+_This is italic text_
+
+~~Strikethrough~~
+
+
+## Blockquotes
+
+
+> Blockquotes can also be nested...
+>> ...by using additional greater-than signs right next to each other...
+> > > ...or with spaces between arrows.
+
+
+## Lists
+
+Unordered
+
++ Create a list by starting a line with `+`, `-`, or `*`
++ Sub-lists are made by indenting 2 spaces:
+  - Marker character change forces new list start:
+    * Ac tristique libero volutpat at
+    + Facilisis in pretium nisl aliquet
+    - Nulla volutpat aliquam velit
++ Very easy!
+
+Ordered
+
+1. Lorem ipsum dolor sit amet
+2. Consectetur adipiscing elit
+3. Integer molestie lorem at massa
+
+
+1. You can use sequential numbers...
+1. ...or keep all the numbers as `1.`
+
+Start numbering with offset:
+
+57. foo
+1. bar
+
+
+## Code
+
+Inline `code`
+
+Indented code
+
+    // Some comments
+    line 1 of code
+    line 2 of code
+    line 3 of code
+
+
+Block code "fences"
+
+```
+Sample text here...
 ```
 
-## 项目要求
+Syntax highlighting
 
-ITNSA项目的要求主要包括以下几个方面：
+``` js
+var foo = function (bar) {
+  return bar++;
+};
 
-- 熟悉网络系统的基本原理
-  - Understand the basic principles of network systems
-  - Familiar with the basic principles of network systems
-  - Master the basic principles of network systems
-  - Proficient in the basic principles of network systems
-  - Expert in the basic principles of network systems
-  - Have a deep understanding of the basic principles of network systems
-- 掌握网络系统的设计与规划方法
-- 掌握网络系统的搭建与配置方法
-- 掌握网络系统的维护与优化方法
-  
+console.log(foo(5));
+```
 
-WorldSkills IT Network Systems Administration (ITNSA) is a skill project in the WorldSkills Competition, belonging to the information technology category. The goal of the ITNSA project is to cultivate students' skills in network system management, including skills in the design, construction, maintenance, and optimization of network systems. The content of the ITNSA project covers knowledge in hardware, software, network security, network management, and other aspects of network systems, making it a comprehensive skill project.
+```python
+def foo(bar):
+    return bar + 1
 
-> Note: This is a note.
+if __name__ == '__main__':
+    print(foo(5))
+```
+
+```bash
+echo "Hello, World!"
+ls -l /etc
+```
+
+## Tables
+
+| Option | Description |
+| ------ | ----------- |
+| data   | path to data files to supply the data that will be passed into templates. |
+| engine | engine to be used for processing templates. Handlebars is the default. |
+| ext    | extension to be used for dest files. |
+
+Right aligned columns
+
+| Option | Description |
+| ------:| -----------:|
+| data   | path to data files to supply the data that will be passed into templates. |
+| engine | engine to be used for processing templates. Handlebars is the default. |
+| ext    | extension to be used for dest files. |
 
 
-ITNSA project is mainly divided into the following aspects. Such as network system design and planning, network system building and configuration, network system maintenance and optimization, network system security and management, network system monitoring and fault handling. The project requirements mainly include the following aspects. Such as understanding the basic principles of network systems, mastering the methods of designing and planning network systems, mastering the methods of building and configuring network systems, mastering the methods of maintaining and optimizing network systems.
+## Links
+
+[link text](http://dev.nodeca.com)
+
+[link with title](http://nodeca.github.io/pica/demo/ "title text!")
+
+Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
 
 
-ITNSA project is mainly divided into the following aspects. Such as network system design and planning, network system building and configuration, network system maintenance and optimization, network system security and management, network system monitoring and fault handling. The project requirements mainly include the following aspects. Such as understanding the basic principles of network systems, mastering the methods of designing and planning network systems, mastering the methods of building and configuring network systems, mastering the methods of maintaining and optimizing network systems.
-  
+## Images
 
-ITNSA project is mainly divided into the following aspects. Such as network system design and planning, network system building and configuration, network system maintenance and optimization, network system security and management, network system monitoring and fault handling. The project requirements mainly include the following aspects. Such as understanding the basic principles of network systems, mastering the methods of designing and planning network systems, mastering the methods of building and configuring network systems, mastering the methods of maintaining and optimizing network systems.
-ITNSA project is mainly divided into the following aspects. Such as network system design and planning, network system building and configuration, network system maintenance and optimization, network system security and management, network system monitoring and fault handling. The project requirements mainly include the following aspects. Such as understanding the basic principles of network systems, mastering the methods of designing and planning network systems, mastering the methods of building and configuring network systems, mastering the methods of maintaining and optimizing network systems.
+![Minion](https://octodex.github.com/images/minion.png)
+![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
+
+Like links, Images also have a footnote style syntax
+
+![Alt text][id]
+
+With a reference later in the document defining the URL location:
+
+[id]: https://octodex.github.com/images/dojocat.jpg  "The Dojocat"
+
+
+## Plugins
+
+The killer feature of `markdown-it` is very effective support of
+[syntax plugins](https://www.npmjs.org/browse/keyword/markdown-it-plugin).
+
+
+### [Emojies](https://github.com/markdown-it/markdown-it-emoji)
+
+> Classic markup: :wink: :cry: :laughing: :yum:
+>
+> Shortcuts (emoticons): :-) :-( 8-) ;)
+
+see [how to change output](https://github.com/markdown-it/markdown-it-emoji#change-output) with twemoji.
+
+
+### [Subscript](https://github.com/markdown-it/markdown-it-sub) / [Superscript](https://github.com/markdown-it/markdown-it-sup)
+
+- 19^th^
+- H~2~O
+
+
+### [\<ins>](https://github.com/markdown-it/markdown-it-ins)
+
+++Inserted text++
+
+
+### [\<mark>](https://github.com/markdown-it/markdown-it-mark)
+
+==Marked text==
+
+
+### [Footnotes](https://github.com/markdown-it/markdown-it-footnote)
+
+Footnote 1 link[^first].
+
+Footnote 2 link[^second].
+
+Inline footnote^[Text of inline footnote] definition.
+
+Duplicated footnote reference[^second].
+
+[^first]: Footnote **can have markup**
+
+    and multiple paragraphs.
+
+[^second]: Footnote text.
+
+
+### [Definition lists](https://github.com/markdown-it/markdown-it-deflist)
+
+Term 1
+
+:   Definition 1
+with lazy continuation.
+
+Term 2 with *inline markup*
+
+:   Definition 2
+
+        { some code, part of Definition 2 }
+
+    Third paragraph of definition 2.
+
+_Compact style:_
+
+Term 1
+  ~ Definition 1
+
+Term 2
+  ~ Definition 2a
+  ~ Definition 2b
+
+
+### [Abbreviations](https://github.com/markdown-it/markdown-it-abbr)
+
+This is HTML abbreviation example.
+
+It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.
+
+*[HTML]: Hyper Text Markup Language
+
+### [Custom containers](https://github.com/markdown-it/markdown-it-container)
+
+::: warning
+*here be dragons*
+:::
