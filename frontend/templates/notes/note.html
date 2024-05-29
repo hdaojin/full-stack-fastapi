@@ -4,26 +4,26 @@
 <div class="container mx-auto px-2 md:px-4 print:p-0">
     <button class="btn float-right print:hidden" onclick="window.print()">打印</button>
     <div class="text-center text-2xl font-bold my-6">
-        <p>{{ html['meta']['document'] | safe }}({{ html['meta']['role'] | safe }})</p>
+        <p>{{ meta['document'] | safe }}({{ meta['role'] | safe }})</p>
     </div>
 
     <table class="table-fixed w-full border-collapse border border-gray-400 my-0 text-center">
-        <tr >
+        <tr>
             <th class="border border-gray-400 bg-gray-100 dark:bg-gray-700 py-3">日期</th>
-            <td class="border border-gray-400">{{ html['meta']['date'] | safe }}</td>
+            <td class="border border-gray-400">{{ meta['date'] | safe }}</td>
             <th class="border border-gray-400 bg-gray-100 dark:bg-gray-700">教练姓名</th>
-            <td class="border border-gray-400">{{ html['meta']['author'] | safe }}</td>
+            <td class="border border-gray-400">{{ meta['author'] | safe }}</td>
             <th class="border border-gray-400 bg-gray-100 dark:bg-gray-700">模块</th>
-            <td class="border border-gray-400">{{ html['meta']['subject'] | safe }}</td>
+            <td class="border border-gray-400">{{ meta['subject'] | safe }}</td>
         </tr>
         <tr>
             <th class="border border-gray-400 bg-gray-100 dark:bg-gray-800 py-3">训练任务</th>
-            <td class="border border-gray-400" colspan="5">{{ html['meta']['task'] | safe }}</td>
+            <td class="border border-gray-400" colspan="5">{{ meta['task'] | safe }}</td>
         </tr>
     </table>
     <div class="border border-gray-400 border-t-0 p-5 pt-10">
         <article id="markdown-container" class="prose prose-gray max-w-none dark:prose-invert">
-            {{ html['content'] | safe }}
+            {{ content | safe }}
         </article>
     </div>
 </div>

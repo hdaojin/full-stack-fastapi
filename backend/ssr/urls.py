@@ -1,6 +1,7 @@
 from fastapi import APIRouter, Request, Depends
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
+import httpx
 
 from app.core.path_config import TEMPLATES_DIR
 from app.api.notes.notes import api_get_note
@@ -20,7 +21,18 @@ def about(request: Request):
     return templates.TemplateResponse(request=request, name="/pages/about.html")
 
 @router.get("/notes/{note_name}", response_class=HTMLResponse)
-def read_note(request: Request, html_content: str = Depends(api_get_note)):
-    return templates.TemplateResponse(request=request, name="/notes/note.html", context={"html": html_content})
+async def read_note(request: Request, note_name: str):
+    async with httpx.AsyncClient() as client:
+        response = await client.get(f"http://127.0.0.1:8000/api/v1/notes/{note_name}")
+        html_content = response.json()
+    return templates.TemplateResponse(request=request, name="/notes/note.html", context=html_content)
+
+# def read_note(request: Request, note_name: str):
+#     response = httpx.get(f"http://127.0.0.1:8000/api/v1/notes/{note_name}")
+
+#     html_content = response.json()
+#     # print(html_content)
+#     return templates.TemplateResponse(request=request, name="/notes/note.html", context=html_content)
 
 
+ 
