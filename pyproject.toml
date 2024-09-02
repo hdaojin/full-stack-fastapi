@@ -1,0 +1,13 @@
+[project]
+name = "full-stack-fastapi"
+version = "0.1.0"
+description = "FastAPI project"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "beautifulsoup4>=4.12.3",
+    "fastapi[standard]>=0.112.2",
+    "markdown2>=2.5.0",
+    "pydantic-settings>=2.4.0",
+    "python-frontmatter>=1.1.0",
+]

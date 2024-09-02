@@ -1,5 +1,4 @@
 import frontmatter
-import markdown
 import markdown2
 from bs4 import BeautifulSoup
 
@@ -11,7 +10,7 @@ def markdown_to_html(md_content: str) -> str:
     """
     Convert markdown content to HTML using mistune
     """
-    post = frontmatter.loads(md_content)
+    post = frontmatter.loads(md_content)  # python-frontmatter is used to load and parse files (or just text) with YAML (or JSON, TOML or other) front matter
     meta = post.metadata
     meta = {k.lower(): v for k, v in meta.items()}
     content = post.content
