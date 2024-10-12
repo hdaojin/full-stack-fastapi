@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="{{ data.meta.description|e if data and data.meta and data.meta.description else 'ITNSA' }}">
+    <meta name="keywords" content="{{ data.meta.keywords|e if data and data.meta and data.meta.keywords else 'ITNSA' }}">
+    <meta name="author" content="{{ data.meta.author|e if data and data.meta and data.meta.author else 'ITNSA' }}">
+    <link rel="icon" type="image/png" href="{{ url_for('static', path='images/computer-laptop-color-icon.png') }}">
+    {%- set default_title = data.meta.title + " - ITNSA"|e if data and data.meta and data.meta.title else 'ITNSA' -%}
+    <title>{%block title %}{{default_title}}{% endblock %}</title>
+</head>
+
+<body>
+    <header>
+    </header>
+    {%- set is_homepage = request.path == '/' %}
+    <nav class="{{ 'm-0' if is_homepage else 'mb-24' }} print:hidden">
+        {# {% include "navbar.html" %} #}
+    </nav>
+    <aside></aside>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer class="print:hidden"></footer>
+
+
+
+    {% block script %}{% endblock script %}
+    {# 
+    <script src="{{ url_for('static', path='/highlight/highlight.min.js') }}"></script>
+    <script>hljs.highlightAll();</script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    #}
+</body>
+
+</html>

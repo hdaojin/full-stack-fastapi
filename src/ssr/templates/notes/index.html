@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% if title %}
+{% block title %}{{ title }} - ITNSA{% endblock %}
+{% endif %}
+
+{% block content %}
+
+<div>
+    <h1>{{ title }}</h1>
+</div>
+
+<div>
+    <ul>
+        {% for notes_item in data.subdirectories %}
+        <li>
+            <a href="{{ url_for('view_subdir_readme', subdirectory=notes_item)}}">{{ notes_item }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+
+{% endblock %}
